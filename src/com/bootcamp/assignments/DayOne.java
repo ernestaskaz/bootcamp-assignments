@@ -1,4 +1,4 @@
-package com.Test;
+package com.bootcamp.assignments;
 
 public class DayOne {
 

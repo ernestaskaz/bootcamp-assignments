@@ -1,4 +1,4 @@
-package com.Test;
+package com.bootcamp.assignments;
 
 import java.util.Scanner;
 
