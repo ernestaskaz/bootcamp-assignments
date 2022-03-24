@@ -1,6 +1,8 @@
 package com.bootcamp.assignments;
 
 
+import com.bootcamp.assignments.DayThree.DayThree;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -8,8 +10,17 @@ public class Main {
 //        dayOne.printStandard();
 //        dayOne.printTypes();
 
-        DayTwo dayTwo = new DayTwo();
-        dayTwo.startAssignments();
+//        DayTwo dayTwo = new DayTwo();
+//        dayTwo.startAssignments();
+
+        DayThree dayThree = new DayThree();
+        int [][] array = dayThree.firstAssignment();
+        dayThree.secondAssignment();
+        dayThree.thirdFourthAssignment();
+        dayThree.fifthAssignment();
+
+
+
 
 
     }
