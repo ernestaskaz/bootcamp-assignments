@@ -3,6 +3,7 @@ package com.bootcamp.assignments.DayThree;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 
 public class DayThree {
 
@@ -49,6 +50,8 @@ public class DayThree {
 
 
     public void thirdFourthAssignment() {
+
+        System.out.println("------ third fourth assignment starts ------");
         BankAccount firstAccount = new BankAccount(1000, "ERNESTAS", "KAZ");
         BankAccount secondAccount = new BankAccount(2000, "SOMEONE", "ELSE");
         //successful tests
@@ -82,6 +85,11 @@ public class DayThree {
         int [] array = new int[] {1,2,3,4};
         //copy array by itterating it;
 
+        Random random = new Random();
+        for (int i = 0; i < array.length; i ++) {
+
+        }
+
         int [] newArray = new int[4];
 
         for (int i = 0; i< array.length; i++) {
@@ -104,22 +112,16 @@ public class DayThree {
 
         int [][]table = new int[tableRow][tableCollumn];
 
-        int row = 1;
-        int collumn = 1;
-
         for (int i = 0; i < table.length; i++) {
             for (int j = 0; j< table[i].length; j++) {
-                table[i][j] = row * collumn;
+                table[i][j] = (i+1)*(j+1);
 
-                System.out.println(row + " " + " * " + " " + collumn + " = " +  table[i][j]);
-                // shift right in a row.
-                collumn++;
+
+                System.out.println(" "+(i + 1)+" * "+(j + 1)+" = "+table[i][j]);
+
+
 
             }
-            //shift row.
-            row++;
-            //reset collumn so multiplication would start at 1.
-            collumn = 1;
         }
         return table;
 
