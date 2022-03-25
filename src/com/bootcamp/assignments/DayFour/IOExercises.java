@@ -11,7 +11,7 @@ public class IOExercises {
 
     // https://www.w3resource.com/java-exercises/io/index.php
 
-    public void startExercises() throws FileNotFoundException {
+    public void startExercises()  {
         firstExercise();
         secondExercise();
         thirdExercise();
@@ -403,14 +403,18 @@ public class IOExercises {
 
     }
 
-    public void eighteenExercise() throws FileNotFoundException {
+    public void eighteenExercise()  {
         System.out.println("-------exercise 18-----------------");
 
         String longestWord = " ";
         String currentWord = " ";
         File file = new File("/Users/Ernestas/IO test/longestword.txt");
         Scanner scanner = null;
-        scanner = new Scanner(file);
+        try {
+            scanner = new Scanner(file);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
         while (scanner.hasNext()) {
             currentWord = scanner.next();
             if (currentWord.length() > longestWord.length()) {
