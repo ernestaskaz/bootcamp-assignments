@@ -1,6 +1,7 @@
 package com.bootcamp.assignments;
 
 
+import com.bootcamp.assignments.DayFour.CollectionsExercise;
 import com.bootcamp.assignments.DayFour.DayFour;
 import com.bootcamp.assignments.DayFour.IOExercises;
 import com.bootcamp.assignments.DayThree.DayThree;
@@ -25,9 +26,12 @@ public class Main {
 //        DayFour dayFour = new DayFour();
 //        dayFour.firstAssignment();
 //        dayFour.secondAssignment();
-        IOExercises ioExercises = new IOExercises();
 
-        ioExercises.startExercises();
+//        IOExercises ioExercises = new IOExercises();
+//        ioExercises.startExercises();
+
+        CollectionsExercise collectionsExercise = new CollectionsExercise();
+        collectionsExercise.startAssignments();
 
 
 

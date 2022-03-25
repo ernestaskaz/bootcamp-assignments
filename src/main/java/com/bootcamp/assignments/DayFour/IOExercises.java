@@ -32,7 +32,7 @@ public class IOExercises {
         eighteenExercise();
     }
 
-    public void firstExercise() {
+    private void firstExercise() {
         //get list of files in directory
         File file = new File("/Users/Ernestas/IO test/");
         String[] fileList = file.list();
@@ -41,7 +41,7 @@ public class IOExercises {
         }
     }
 
-    public void secondExercise() {
+    private void secondExercise() {
         //Write a Java program to get specific files by extensions from a specified folder.
         File file = new File("/Users/Ernestas/IO test/");
         String[] fileList = file.list(new FilenameFilter() {
@@ -60,7 +60,7 @@ public class IOExercises {
 
     }
 
-    public void thirdExercise() {
+    private void thirdExercise() {
         //Write a Java program to check if a file or directory specified by pathname exists or not
         File file = new File("/Users/Ernestas/IO test/aaa.txt");
         if (file.exists()) {
@@ -71,7 +71,7 @@ public class IOExercises {
 
     }
 
-    public void fourthExercise() {
+    private void fourthExercise() {
         //Write a Java program to check if a file or directory has read and write permission.
         File file = new File("/Users/Ernestas/IO test/work.txt");
         if (file.canRead() && file.canWrite()) {
@@ -82,7 +82,7 @@ public class IOExercises {
 
     }
 
-    public void fifthExercise() {
+    private void fifthExercise() {
         //Write a Java program to check if given pathname is a directory or a file
         File file = new File("/Users/Ernestas/IO test/work.txt");
         if (file.isDirectory())
@@ -104,7 +104,7 @@ public class IOExercises {
 
     }
 
-    public void sixthExercise() {
+    private void sixthExercise() {
         File file = new File("/Users/Ernestas/IO test/1.txt");
         File secondFile = new File("/Users/Ernestas/IO test/work.txt");
         try {
@@ -131,7 +131,7 @@ public class IOExercises {
 
     }
 
-    public void sevenExercise() {
+    private void sevenExercise() {
 
         File file = new File("/Users/Ernestas/IO test/work.txt");
         Date lastModified = new Date(file.lastModified());
@@ -139,7 +139,7 @@ public class IOExercises {
 
     }
 
-    public void eightExercise() {
+    private void eightExercise() {
 //        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 //        System.out.println("input some string : ");
 //        try {
@@ -153,7 +153,7 @@ public class IOExercises {
 
     }
 
-    public void nineExercise() {
+    private void nineExercise() {
         File file = new File("/Users/Ernestas/IO test/work.txt");
         System.out.println(IOHelpers.bytesSize(file));
         System.out.println(IOHelpers.kilobytesSize(file));
@@ -161,7 +161,7 @@ public class IOExercises {
 
     }
 
-    public void tenExercise() {
+    private void tenExercise() {
 
         //TODO. reflect on this. read on basics. Why *2?
         File file = new File("/Users/Ernestas/IO test/work.txt");
@@ -189,7 +189,7 @@ public class IOExercises {
 
     }
 
-    public void elevenExercise() {
+    private void elevenExercise() {
 
         BufferedReader reader = null;
         String line = "";
@@ -208,7 +208,7 @@ public class IOExercises {
 
     }
 
-    public void twelveExercise() {
+    private void twelveExercise() {
 
         // why last value is null?
         System.out.println("-------exercise twelve-----------------");
@@ -239,7 +239,7 @@ public class IOExercises {
 
     }
 
-    public void thirteenExercise() {
+    private void thirteenExercise() {
 
         System.out.println("-------exercise 13-----------------");
 
@@ -266,7 +266,7 @@ public class IOExercises {
 
     }
 
-    public void fourteenExercise() {
+    private void fourteenExercise() {
         System.out.println("-------exercise 14-----------------");
         StringBuilder sb = new StringBuilder();
         File file = new File("/Users/Ernestas/IO test/multiplelines.txt");
@@ -297,7 +297,7 @@ public class IOExercises {
 
     }
 
-    public void fifteenExercise() {
+    private void fifteenExercise() {
 
         //no br
 
@@ -333,7 +333,7 @@ public class IOExercises {
 
     }
 
-    public void sixteenExercise() {
+    private void sixteenExercise() {
 
         //with br
 
@@ -369,7 +369,7 @@ public class IOExercises {
 
     }
 
-    public void seventeenExercise() {
+    private void seventeenExercise() {
         System.out.println("-------exercise 17-----------------");
 
 //        String line = "";
@@ -403,7 +403,7 @@ public class IOExercises {
 
     }
 
-    public void eighteenExercise()  {
+    private void eighteenExercise()  {
         System.out.println("-------exercise 18-----------------");
 
         String longestWord = " ";
