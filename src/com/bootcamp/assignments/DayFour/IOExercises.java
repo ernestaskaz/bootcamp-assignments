@@ -408,12 +408,13 @@ public class IOExercises {
 
         String longestWord = " ";
         String currentWord = " ";
-        File file = new File("/Users/Ernestas/IO test/longestword.txt");
+        File file = new File("/Users/Ernestas/IO test/longestword.tx");
         Scanner scanner = null;
         try {
             scanner = new Scanner(file);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
+            System.err.println(e);
         }
         while (scanner.hasNext()) {
             currentWord = scanner.next();

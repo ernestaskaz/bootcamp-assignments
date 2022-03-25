@@ -72,6 +72,8 @@ public class DayFour {
            int value = Collections.frequency(convertedList, word);
             wordCount.put(word, value);
 
+            // what if: push to stack, find each stack item in a uniqueWordsSet, ++ value, pop.
+
         }
         System.out.println(" ");
         for (String word: wordCount.keySet()) {
