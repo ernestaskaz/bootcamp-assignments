@@ -20,9 +20,6 @@ public class Car extends Vehicle {
         this.currentGear = currentGear;
     }
 
-    protected int getCurrentGear() {
-        return this.currentGear;
-    }
 
     protected int getNumberOfGears()  {
         return numberOfGears;
