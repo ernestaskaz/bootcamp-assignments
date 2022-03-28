@@ -403,7 +403,7 @@ public class IOExercises {
 
     }
 
-    private void eighteenExercise()  {
+    public void eighteenExercise()  {
         System.out.println("-------exercise 18-----------------");
 
         String longestWord = " ";
@@ -421,6 +421,28 @@ public class IOExercises {
             if (currentWord.length() > longestWord.length()) {
                 longestWord = currentWord;
         }
+
+        }
+        System.out.println("longest word from a given list is : " + longestWord);
+
+    }
+
+
+    public void eighteenExercise(File file) throws FileNotFoundException {
+        System.out.println("-------exercise 18-----------------");
+
+
+        String longestWord = " ";
+        String currentWord = " ";
+        Scanner scanner = null;
+        scanner = new Scanner(file);
+
+
+        while (scanner.hasNext()) {
+            currentWord = scanner.next();
+            if (currentWord.length() > longestWord.length()) {
+                longestWord = currentWord;
+            }
 
         }
         System.out.println("longest word from a given list is : " + longestWord);

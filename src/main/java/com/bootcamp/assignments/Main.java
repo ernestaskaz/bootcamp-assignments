@@ -18,11 +18,11 @@ public class Main {
 //        DayTwo dayTwo = new DayTwo();
 //        dayTwo.startAssignments();
 //
-//        DayThree dayThree = new DayThree();
-//        int [][] array = dayThree.firstAssignment();
-//        dayThree.secondAssignment();
-//        dayThree.thirdFourthAssignment();
-//        dayThree.fifthAssignment();
+        DayThree dayThree = new DayThree();
+        int [][] array = dayThree.firstAssignment();
+        dayThree.secondAssignment();
+        dayThree.thirdFourthAssignment();
+        dayThree.fifthAssignment();
 //        DayFour dayFour = new DayFour();
 //        dayFour.firstAssignment();
 //        dayFour.secondAssignment();
@@ -30,8 +30,8 @@ public class Main {
 //        IOExercises ioExercises = new IOExercises();
 //        ioExercises.startExercises();
 
-        CollectionsExercise collectionsExercise = new CollectionsExercise();
-        collectionsExercise.startAssignments();
+//        CollectionsExercise collectionsExercise = new CollectionsExercise();
+//        collectionsExercise.startAssignments();
 
 
 

@@ -23,9 +23,27 @@ public class BankAccount {
     }
 
 
-    public void deposit(double amount) {
+//does work without try catch statement and no method signature for throw Illegal
+//    public void deposit(double amount)  {
+//
+//        try{
+//            if (amount > maximumToDeposit) {
+//                throw new IllegalArgumentException(  "Transaction cancelled. Max deposit - " + maximumToDeposit + " | " + " Your deposit: " + amount);
+//            } else {
+//
+//                this.balance += amount;
+//                System.out.println("deposit of " + amount + " was successful");
+//            }
+//
+//        } catch (IllegalArgumentException ex){
+//            System.out.println(ex);
+//
+//        }
+//
+//    }
 
-        try{
+    public void deposit(double amount) throws IllegalArgumentException {
+
             if (amount > maximumToDeposit) {
                 throw new IllegalArgumentException(  "Transaction cancelled. Max deposit - " + maximumToDeposit + " | " + " Your deposit: " + amount);
             } else {
@@ -34,9 +52,7 @@ public class BankAccount {
                 System.out.println("deposit of " + amount + " was successful");
             }
 
-        } catch (IllegalArgumentException ex){
-            System.out.println(ex);
-        }
+
 
     }
 
@@ -57,6 +73,15 @@ public class BankAccount {
 
     public void printBalance() {
         System.out.println("Your current balance is : " + this.balance);
+    }
+
+    public double getBalance() {
+        return this.balance;
+
+    }
+
+    public double getMaximumToDeposit() {
+        return this.maximumToDeposit;
     }
 
     public String toString() {
@@ -84,4 +109,8 @@ public class BankAccount {
     }
 
 
-}
+    }
+
+
+
+

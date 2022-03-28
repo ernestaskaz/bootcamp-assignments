@@ -5,7 +5,7 @@ import java.util.*;
 public class DayFour {
 
 
-    public void firstAssignment() {
+    public ArrayList<String> firstAssignment() {
 
         // 1. declare and initialize String array with 7 arbitrary colors.
         String[] initialColors = {"blue", "red", "black", "yellow", "purple", "orange", "beige"};
@@ -18,31 +18,29 @@ public class DayFour {
 
         }
         System.out.println("copied colors" + colors);
-        // 4. Remove 3rd element from colors list
         colors.remove(2);
-        // 5. Add new color at the end of the colors list
+
         colors.add("brown");
         System.out.println("removed 3rd element black and added brown " + colors);
-        // 6. Add new color at the beginning of the colors list
+
         colors.add(0, "white");
         System.out.println("added white to zero index " + colors);
 
-        // 7. Loop through colors list and output all values (use for each loop)
         for (String color: colors) {
             System.out.println("7. Loop color is " + color);
 
         }
-        // 8. Create new list (colorsSublist) which will be sublist of the colors list (will contain elements from
-        // index 2 to index 5)
+
         List<String> colorsSublist = colors.subList(2, 5);
-        //    (hint: take a look at List interface and find a method which you can use to achieve this)
-        // 9. Use for loop to output each element of colorsSublist list
+
         for (int i = 0; i < colorsSublist.size(); i++) {
             System.out.println("9 sublist colors are " + colorsSublist.get(i));
 
         }
 
+        ArrayList<String> returnedValue =  new ArrayList<String>(Arrays.asList("blue", "red", "black", "yellow", "purple", "orange", "beige"));
 
+        return returnedValue;
 
 }
 
